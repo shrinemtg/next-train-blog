@@ -1,3 +1,4 @@
+import Link from "next/link";
 import styled from "styled-components";
 
 export default function Header() {
@@ -24,9 +25,11 @@ export default function Header() {
           </ul>
         </nav>
       </NavContainer>
+      <Link href="/src/app/Dorasena-page/">ドラセナ</Link>
     </header>
   );
 }
+
 const Title = styled.div`
   text-align: center;
   margin: 30px;
@@ -50,5 +53,4 @@ const NavContainer = styled.div`
   text-align: center;
   justify-content: center;
   display: flex;
-  /* color: #c0a9da; */
 `;

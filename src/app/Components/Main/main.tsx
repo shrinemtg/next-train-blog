@@ -9,10 +9,12 @@ export default function Main() {
   const [width, height] = [208, 152];
   return (
     <>
-      <div>
-        <p>Season</p>
-        <h1>Pick up</h1>
-      </div>
+      <Headline>
+        <div>
+          <p>Season</p>
+          <h1>Pick up</h1>
+        </div>
+      </Headline>
       <WarapContainer>
         <ListContainer>
           <ImageContainer>
@@ -471,12 +473,65 @@ export default function Main() {
           </div>
         </SideContainer>
       </WarapContainer>
+
+      <Media>
+        <StyledImage>
+          <Image
+            src="/Imgs/removeーbg/logos_youtube.png"
+            alt=""
+            width={190}
+            height={42}
+          />
+        </StyledImage>
+        <div>
+          <Image
+            src="/Imgs/removeーbg/youtube-Thumbnail.png"
+            alt=""
+            width={1180}
+            height={450}
+          />
+        </div>
+      </Media>
     </>
   );
 }
 
+const StyledImage = styled.div`
+  margin: 48px;
+`;
+
+const Media = styled.div`
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  max-width: 1180px;
+  margin: 48px auto;
+  margin-top: 100px;
+  border-top: 1px dotted;
+  > Image {
+    margin: 40px;
+  }
+`;
+const Headline = styled.div`
+  display: flex;
+  justify-content: left;
+  flex-direction: column-reverse;
+  max-width: 1180px;
+  margin: 60px auto;
+
+  > div h1 {
+    width: 208px;
+    margin: 0 0 0 80px;
+    border-bottom: 1px solid;
+  }
+  > div p {
+    margin: 0 0 0 40px;
+  }
+`;
+
 const HostContainer = styled.div`
   margin-top: 56px;
+  background-color: #386838;
   > h2 {
     text-align: center;
     border-bottom: 1px solid;
@@ -487,12 +542,13 @@ const HostContainer = styled.div`
 const WarapContainer = styled.div`
   display: flex;
   justify-content: center;
-  max-width: 1120px; /* 最大幅を1080pxに設定 */
+  max-width: 1200px; /* 最大幅を1080pxに設定 */
   margin: 0 auto; /* 左右の余白を自動で設定 */
 `;
 const FormContainer = styled.form`
   display: flex;
   align-items: center;
+  background-color: darkgreen;
   #form4 {
     position: relative;
     max-width: 300px;
@@ -504,7 +560,7 @@ const FormContainer = styled.form`
     position: absolute;
     left: 0;
     top: 0;
-    border-radius: 25px;
+    border-radius: 16px;
     outline: 0;
     background: #eee;
   }
@@ -512,9 +568,11 @@ const FormContainer = styled.form`
 const SideContainer = styled.div`
   width: 208px;
   margin: 0 auto;
+  background-color: darkgreen;
 `;
 const Button = styled.button`
-<a href=""></a>`;
+  gap: 10px;
+`;
 const Tag = styled.div`
   display: flex;
 `;
@@ -524,16 +582,16 @@ const Name = styled.div`
 
 const ImageContainer = styled.div`
   width: 208px;
+  box-shadow: 1px 1px 8px rgba(0, 0, 0, 0.8);
   > img {
-    box-shadow: 1px 1px 8px rgba(0, 0, 0, 0.8);
   }
 `;
 
 const ListContainer = styled.div`
   display: flex;
-  justify-content: center;
   flex-wrap: wrap;
-  margin: auto;
+  justify-content: center;
+  margin: 40px 0;
   gap: 32px;
 
   @media screen and (max-width: 748px) {
