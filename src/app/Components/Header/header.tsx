@@ -25,7 +25,7 @@ export default function Header() {
           </ul>
         </nav>
       </NavContainer>
-      <Link href="/src/app/Dorasena-page/">ドラセナ</Link>
+      <Link href="/Dorasena-page/"></Link>
     </header>
   );
 }
