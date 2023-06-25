@@ -3,8 +3,8 @@ import styled from "styled-components";
 // import React from "react";
 import Image from "next/image";
 import Link from "next/link";
-import Youtube from "../Youtube/youtube";
-import Mainside from "./Mainside/mainsaid";
+import Youtube from "./youtube/youtube";
+import Mainside from "./main-side/mainsaid";
 
 // import { client } from "../../../libs/client";
 
@@ -21,7 +21,7 @@ export default function Main() {
       <WarapContainer>
         <ListContainer>
           <ImageContainer>
-            <Link href="/Dorasena-page/">
+            <Link href="/dorasena/">
               <a>
                 <Image
                   src="/Imgs/removeーbg/dorsena-bg.png"

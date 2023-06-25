@@ -3,9 +3,9 @@ import Head from "next/head";
 // import Image from "next/image";
 // import styles from "./page.module.css";
 // import styled from "styled-components";
-import Main from "./Components/Main/main";
-import Footer from "./Components/Footer/footer";
-import Header from "./Components/Header/header";
+import Main from "../components/main/main";
+import Footer from "../components/footer";
+import Header from "../components/header";
 
 export default function Home() {
   return (

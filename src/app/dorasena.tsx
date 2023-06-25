@@ -103,6 +103,7 @@ export default function Dorasena() {
               <h2>POINT</h2>
             </RotatedText>
           </Point>
+
           <h2>
             初心者にも育てやすく、種類が豊富な「ドラセナ」。特に「マッサンゲアナ」は"幸福の木"という呼び名を持ち、ギフトにも人気です。伸びすぎた場合は5～8月に剪定できます。
           </h2>
